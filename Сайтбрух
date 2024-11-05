@@ -3,80 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Образование ОИС</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #007BFF;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-        }
-        .container {
-            padding: 15px;
-        }
-        h2 {
-            color: #333;
-        }
-        .card {
-            background: #fff;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Образовательная платформа ОИС</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Образовательная платформа для студентов ОИС</h1>
+        <nav>
+            <ul>
+                <li><a href="#courses">Курсы</a></li>
+                <li><a href="#resources">Ресурсы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Образование ОИС</h1>
-</header>
+    <main>
+        <section id="courses">
+            <h2>Курсы</h2>
+            <div class="course-card">
+                <h3>Введение в информатику</h3>
+                <p>Изучите основы информатики и программирования.</p>
+                <button onclick="enrollCourse('Введение в информатику')">Записаться</button>
+            </div>
+            <div class="course-card">
+                <h3>Системное программирование</h3>
+                <p>Углубленное изучение системного программирования и разработки ПО.</p>
+                <button onclick="enrollCourse('Системное программирование')">Записаться</button>
+            </div>
+        </section>
 
-<div class="container">
-    <h2>Программа обучения</h2>
-    <div class="card">
-        <p>Ваша программа включает основы программирования, базы данных, системы управления, веб-разработку и многие другие дисциплины.</p>
-    </div>
+        <section id="resources">
+            <h2>Ресурсы</h2>
+            <ul>
+                <li><a href="#">Учебники</a></li>
+                <li><a href="#">Видеоуроки</a></li>
+                <li><a href="#">Форумы</a></li>
+            </ul>
+        </section>
+    </main>
 
-    <h2>Расписание</h2>
-    <div class="card">
-        <ul>
-            <li>Пн: Программирование - 10:00 - 12:00</li>
-            <li>Вт: БД - 13:00 - 15:00</li>
-            <li>Ср: Web-разработка - 10:00 - 12:00</li>
-            <li>Чт: Алгоритмы - 14:00 - 16:00</li>
-            <li>Пт: Практика - 11:00 - 13:00</li>
-        </ul>
-    </div>
+    <footer>
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Связь с администрацией: <a href="mailto:admin@education-platform.com">admin@education-platform.com</a></p>
+        </section>
+        <p>&copy; 2023 Образовательная платформа ОИС</p>
+    </footer>
 
-    <h2>Ресурсы</h2>
-    <div class="card">
-        <ul>
-            <li><a href="#">Книги по программированию</a></li>
-            <li><a href="#">Онлайн курсы</a></li>
-            <li><a href="#">Форумы обсуждения</a></li>
-        </ul>
-    </div>
-</div>
-
-<footer>
-    <p>&copy; 2023 Образование ОИС</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
